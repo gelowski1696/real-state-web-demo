@@ -1,0 +1,6 @@
+.intro { padding: clamp(5rem, 11vw, 11rem) clamp(1.25rem, 12vw, 14rem) 4rem; }
+.eyebrow { margin: 0 0 1.5rem; color: var(--muted); font-family: var(--font-mono); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; }
+.intro h1 { max-width: 9ch; margin: 0; font-family: var(--font-display); font-size: clamp(4rem, 9vw, 9rem); font-weight: 400; letter-spacing: -.08em; line-height: .87; }
+.intro h1 em { color: var(--bronze); font-style: normal; }
+.body { max-width: 40ch; margin: 2rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.6; }
+.formWrap { padding: 0 clamp(1.25rem, 12vw, 14rem) clamp(5rem, 9vw, 9rem); }

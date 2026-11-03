@@ -1,0 +1,8 @@
+.footer { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 2rem clamp(1.25rem, 4vw, 4.5rem); border-top: 1px solid var(--line); color: var(--muted); }
+.brand { display: flex; align-items: center; gap: .65rem; color: var(--charcoal); font-family: var(--font-mono); font-size: .63rem; letter-spacing: .08em; text-transform: uppercase; }
+.brand small { display: block; margin-top: .35rem; color: var(--muted); font-size: .53rem; letter-spacing: .04em; text-transform: none; }
+.mark { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; border: 1px solid var(--charcoal); border-radius: 50%; font-family: var(--font-display); font-size: 1.1rem; letter-spacing: -.1em; text-transform: none; }
+.links { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+.links a, .top { color: var(--charcoal); font-family: var(--font-mono); font-size: .62rem; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.links a:hover, .top:hover { color: var(--bronze); }
+@media (max-width: 760px) { .footer { align-items: flex-start; flex-direction: column; gap: 1.4rem; } }

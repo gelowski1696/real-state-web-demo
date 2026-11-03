@@ -1,0 +1,11 @@
+:root { --paper: #f3f0e9; --charcoal: #22221f; --muted: #6d6a61; --line: #d5d0c6; --bronze: #92735d; --font-display: var(--font-display-face), Georgia, serif; --font-body: var(--font-body-face), Arial, sans-serif; --font-mono: var(--font-mono-face), monospace; }
+* { box-sizing: border-box; }
+html { background: var(--paper); scroll-behavior: smooth; }
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 220ms; }
+body { margin: 0; overflow-x: hidden; background: var(--paper); color: var(--charcoal); font-family: var(--font-body); }
+a, button, input, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid var(--bronze); outline-offset: 4px; }
+::selection { background: var(--charcoal); color: var(--paper); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

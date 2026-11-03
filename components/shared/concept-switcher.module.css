@@ -1,0 +1,8 @@
+.nav { display: flex; align-items: center; gap: 1.25rem; }
+.label { color: var(--muted); font-family: var(--font-mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; }
+.links { display: flex; gap: .35rem; }
+.links a { display: inline-flex; align-items: center; gap: .45rem; padding: .5rem .65rem; color: var(--charcoal); font-family: var(--font-mono); font-size: .62rem; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.links a span { color: var(--muted); font-size: .56rem; }
+.links a:hover, .links .active { background: var(--charcoal); color: var(--paper); }
+.links a:hover span, .links .active span { color: #b9b3a9; }
+@media (max-width: 700px) { .nav { align-items: flex-start; flex-direction: column; gap: .65rem; } .links { flex-wrap: wrap; } }

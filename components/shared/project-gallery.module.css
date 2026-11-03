@@ -1,0 +1,15 @@
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+.thumb { position: relative; aspect-ratio: 4 / 3; overflow: hidden; padding: 0; border: 0; background: #d8d3c9; cursor: zoom-in; }
+.thumb img { object-fit: cover; transition: transform 500ms cubic-bezier(.2,.75,.25,1); }
+.thumb:hover img { transform: scale(1.04); }
+.backdrop { position: fixed; z-index: 50; inset: 0; display: grid; place-items: center; padding: clamp(1rem, 4vw, 4rem); background: rgba(20,20,18,.88); }
+.dialog { width: min(1100px, 100%); }
+.dialogHeader, .dialogControls { display: flex; align-items: center; justify-content: space-between; color: #f3f0e9; font-family: var(--font-mono); font-size: .61rem; letter-spacing: .08em; text-transform: uppercase; }
+.dialogHeader { padding-bottom: .75rem; }
+.dialogHeader button, .dialogControls button { border: 0; background: transparent; color: inherit; cursor: pointer; font-family: inherit; font-size: inherit; letter-spacing: inherit; text-transform: inherit; }
+.dialogHeader button:hover, .dialogControls button:hover { color: #c7a17d; }
+.largeImage { position: relative; aspect-ratio: 16 / 10; background: #242421; }
+.largeImage img { object-fit: contain; }
+.dialogControls { padding-top: .85rem; }
+.dialogControls span { color: #aaa69f; font-size: .55rem; text-transform: none; letter-spacing: .04em; }
+@media (max-width: 600px) { .grid { gap: .45rem; } .dialogControls span { display: none; } }

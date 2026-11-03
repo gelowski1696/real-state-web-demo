@@ -1,0 +1,10 @@
+.page { min-height: 100svh; background: var(--paper); color: var(--charcoal); }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1.35rem clamp(1.25rem, 4vw, 4.5rem); border-bottom: 1px solid var(--line); }
+.wordmark { color: var(--charcoal); font-family: var(--font-mono); font-size: .67rem; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; }
+.intro { padding: clamp(4rem, 9vw, 8.5rem) clamp(1.25rem, 12vw, 14rem) clamp(3.5rem, 7vw, 6rem); }
+.eyebrow { margin: 0 0 1.6rem; color: var(--muted); font-family: var(--font-mono); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; }
+.intro h1 { max-width: 9ch; margin: 0; font-family: var(--font-display); font-size: clamp(4rem, 9vw, 9rem); font-weight: 400; letter-spacing: -.08em; line-height: .88; }
+.intro h1 em { color: var(--bronze); font-style: normal; }
+.description { max-width: 42ch; margin: 2rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.55; }
+.explorer { padding: 0 clamp(1.25rem, 4vw, 4.5rem) clamp(4rem, 8vw, 8rem); }
+@media (max-width: 700px) { .header { align-items: flex-start; flex-direction: column; gap: 1.3rem; } }
